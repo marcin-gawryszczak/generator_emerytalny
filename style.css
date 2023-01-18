@@ -1,0 +1,119 @@
+body
+{
+    background-color: #191d21;
+    font-family: 'Inconsolata', monospace;
+    color: azure;
+}
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 920px;
+}
+
+h1
+{
+    text-align: center;
+    color: #39a5f1;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+
+h4
+{
+    text-align: center;
+    color: #39a5f1;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+
+#welcome
+{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 18px;
+    width: 880px;
+    margin-bottom: 0;
+}
+
+#text
+{
+    width: 880px;
+    line-height: 150%;
+    text-align: justify;
+    margin: 0;
+}
+
+
+.material-symbols-outlined 
+{
+    font-size: 18px !important;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: #1672c0;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: #1672c0;
+}
+
+a:hover
+{
+    color: #39a5f1;
+}
+
+#allinputs
+{
+    margin-top:0;
+    margin-bottom:30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.inputs
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type='number']
+{
+    margin-left: 20px;
+    background-color: #39a5f1;
+    border: 1px solid gray;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    border-radius: 3px;
+}
+
+input[type="number"]:hover
+{
+    appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+{ 
+  -webkit-appearance: none;
+}
+
+
+input[type='button'], [type='reset']
+{
+    cursor: pointer;
+    background-color: #39a5f1;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+}

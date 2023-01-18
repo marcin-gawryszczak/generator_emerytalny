@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Generator emerytalny</title>
+        <meta name="description" content="Na tej witrynie obliczysz ile czasu potrzeba aby uzbierać na taką emeryturę jaką chcesz.">
+        <meta name="keywords" content="emerytura, oszczedzanie, generator, dlugosc zycia, inwestycje">
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+        <meta name="author" content="Marcin Gawryszczak">
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    </head>
+    <body>
+        <main>
+        <div id="container">
+        <header><h1>GENERATOR EMERYTALNY</h1>
+            <h4>zaplanuj jesień swojego życia</h4>
+        </header>
+        <article>
+            <section>
+                <div id="welcome">
+                    <div id="text">
+                        <p>Witaj w moim generatorze emerytalnym. Jego celem jest pomoc w szacowaniu ile oraz w jaki sposób trzeba oszczędzać, aby  osiągnąć upragnioną emeryturę w odpowiednim dla siebie wieku. Wprowadź informacje o sobie poniżej a otrzymasz konkretne wyliczenia bez potrzeby nużącego siedzenia w excelu czy przy kalkulatorze :) Szczegółowe zasady działania generatora poznasz klikając tutaj <a href="#"><span class="material-symbols-outlined">info</span></a> </p>
+                        <br/>
+                        <p>Uzupełnij proszę kilka poniższych danych:</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <form>
+                <div id="allinputs">
+                    <div class="inputs">
+                        <label> Ile masz skończonych lat?<input type="number" value="30" min="15" max="120" id="age"></label>
+                    </div>
+                    <div class="inputs">
+                        <label> W jakim wieku chcesz przejść na emeryturę?<input type="number" value="60" min="16" max="120" id="pension_age"></label>
+                    </div>
+                    <div class="inputs">
+                        <label> Do jakiego wieku chcesz dożyć?<input type="number" value="85" min="17" max="150" id="agelife" ></label>
+                    </div>
+                    <div class="inputs">
+                        <label> Ile złotych miesięcznie przeznaczysz na emeryturę?<input type="number" value="1000" min="1" id="monthlycash"></label>
+                    </div>
+                    <div class="inputs">
+                        <label> Jaki średni % rocznych zysków zakładasz dla swoich inwestycji? [0-100] <input type="number" value="0" min="0" max="100" id="percent"></label>
+                    </div>
+                    <div class="inputs">
+                        <input type="button" value="Pokaż wyniki" id="result">
+				        <input type="reset" value="Wyczyść do bazowych wartości" id="">
+                    </div>
+                </div>
+                </form>
+            </section>
+            <section>
+                <div id="pension">
+
+                </div>
+            </section>
+
+
+        </article>
+        
+
+        </div>
+        </main>
+        <script src="emerytura.js"></script>
+    </body>
+
+</html>

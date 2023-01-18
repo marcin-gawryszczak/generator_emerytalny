@@ -20,6 +20,6 @@ function count_pension()
     totalcash = 12*investing_time*monthlycash
     pension = totalcash/using_fund_time_months
 
-    document.getElementById('pension').innerHTML = 'Twoja emerytura wyniesie: '+ pension+ zł
+    document.getElementById('pension').innerHTML = 'Twoja emerytura wyniesie: '+ pension+ ' zł'
 
 }

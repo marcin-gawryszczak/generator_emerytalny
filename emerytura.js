@@ -2,8 +2,6 @@
 
 document.querySelector('#result').addEventListener('click', count_pension)
 
-
-
 let totalcash;
 
 function count_pension()
@@ -18,13 +16,16 @@ function count_pension()
     let investing_time_months = (pension_age-age)*12;
     investing_money(percent, monthlycash, investing_time_months)
 
-    
+    investing_in_retirement()
+
 
     let pension = totalcash/total_months_of_using_money;
 
     pension = pension.toFixed(2)
+    totalcash = totalcash.toFixed(2)
 
-    let statement = '<div>Twoja emerytura wyniesie: '+pension+ 'zł</div>'
+    let statement = '<div>Zgromadzisz środki w wysokości: '+totalcash+ 'zł</div>'
+    statement += '<div>Twoja emerytura wyniesie: '+pension+ 'zł</div>'
     console.log(statement)
     document.querySelector('#pension').innerHTML = statement
 
@@ -42,5 +43,23 @@ function investing_money(profit,cash,time)
     }
 
     totalcash = total_investing_money
-    
 }
+
+function investing_in_retirement()
+{
+    const radioButtons = document.querySelectorAll('input[name="answer"]');
+
+    let selectedanswer
+    for (const radioButton of radioButtons)
+    {
+        if (radioButton.checked)
+        {
+            selectedanswer = radioButton.value;
+            break;
+        }
+    } 
+
+    console.log(selectedanswer)
+}
+
+

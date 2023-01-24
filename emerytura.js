@@ -6,6 +6,8 @@ let totalcash;
 let percent;
 let total_months_of_using_money
 let pension
+let percent_retirement
+let first_month_interest
 
 function count_pension()
 {
@@ -49,6 +51,8 @@ function investing_money(profit,cash,time)
     totalcash = total_investing_money
 }
 
+
+
 function investing_in_retirement()
 {
     const radioButtons = document.querySelectorAll('input[name="answer"]');
@@ -63,21 +67,22 @@ function investing_in_retirement()
 
     if (selectedanswer == '0');
     else {
-    let first_month_interest = totalcash*percent/100/12
 
-    console.log(first_month_interest)
-    
-    first_month_capital_pension = totalcash/((Math.pow((1+(percent/100/12)),total_months_of_using_money)-1)/(percent/100/12))
+    percent_retirement = document.querySelector('#percent_retirement').value;
+    first_month_interest = totalcash*percent_retirement/100/12
 
-    // console.log(first_month_capital_pension)
+        if (percent_retirement != '0')
+        
+        {first_month_capital_pension = totalcash/((Math.pow((1+(percent_retirement/100/12)),total_months_of_using_money)-1)/(percent_retirement/100/12))
 
-    pension = first_month_capital_pension+first_month_interest
+        // console.log(first_month_capital_pension)
 
+        pension = first_month_capital_pension+first_month_interest}
+        else
+        {pension = totalcash/total_months_of_using_money}
 
 }
-
-    
-
+ 
 }
 
 

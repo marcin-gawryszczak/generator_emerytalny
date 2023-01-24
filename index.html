@@ -47,12 +47,15 @@
                         <label> Ile złotych miesięcznie przeznaczysz na emeryturę?<input type="number" value="1000" min="1" id="monthlycash"></label>
                     </div>
                     <div class="inputs">
-                        <label> Jaki średni % rocznych zysków zakładasz dla swoich inwestycji? <input type="number" value="0" min="0" max="100" id="percent"></label>
+                        <label> Jaki średni % rocznych zysków zakładasz dla swoich inwestycji? <input type="number" value="5" min="0" max="100" id="percent"></label>
                     </div>
                     <div class="inputs">
                             Czy po przejściu na emeryturę kapitał będzie pracować dalej?
-                            <label><input type="radio" name="answer" value="1" id="TAK">TAK</label>
+                            <label><input type="radio" name="answer" value="1" id="TAK" checked>TAK</label>
                             <label><input type="radio" name="answer" value="0" id="NIE">NIE</label>
+                    </div>
+                    <div class="inputs">
+                        <label> Określ średni % rocznych zysków w czasie emerytury <input type="number" value="2" min="0" max="100" id="percent_retirement"></label>
                     </div>
                     <div class="inputs">
                         <input type="button" value="Pokaż wyniki" id="result">

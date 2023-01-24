@@ -1,4 +1,4 @@
-#generator_emerytalny version 1.2.0
+#generator_emerytalny version 1.3.0
 
 #Page which help user to count how much money should save for retirement
 
